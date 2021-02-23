@@ -20,10 +20,9 @@ def getquote():
     try:
         response = get('http://api.forismatic.com/api/1.0/?method=getQuote&format=json&lang=en')
         q = '{quoteText} - {quoteAuthor}\n'.format(**loads(response.text))
+        return q
     except:
         return "0"
-    
-    return q
 
 # Main program starts here
 if __name__ == "__main__":
@@ -39,4 +38,5 @@ if __name__ == "__main__":
         if quote != "0":
             final_quote = f"{quote}\n{HASHTAG1} {HASHTAG2} {HASHTAG3}"
             api.update_status(final_quote)
+            print("Tweeted a new tweet")
         time.sleep(SLEEP_DURATION)
