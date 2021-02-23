@@ -39,4 +39,4 @@ if __name__ == "__main__":
         if quote != "0":
             final_quote = f"{quote}\n{HASHTAG1} {HASHTAG2} {HASHTAG3}"
             api.update_status(final_quote)
-        time.sleep(3600)
+        time.sleep(SLEEP_DURATION)
