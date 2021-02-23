@@ -39,4 +39,4 @@ if __name__ == "__main__":
             final_quote = f"{quote}\n{HASHTAG1} {HASHTAG2} {HASHTAG3}"
             api.update_status(final_quote)
             print("Tweeted a new tweet")
-        time.sleep(SLEEP_DURATION)
+        time.sleep(int(SLEEP_DURATION))
