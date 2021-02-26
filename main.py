@@ -128,7 +128,7 @@ if __name__ == "__main__":
 
     # Authorizing instagram account just once and for all
     bot = Bot()
-    bot.login(username = "philosophy.girl_", password = "rayraypass")
+    bot.login(username = USERNAME, password = PASSWORD)
 
     # Printing the quotes and sleeping for the set time
     while True:
