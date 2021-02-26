@@ -150,7 +150,6 @@ if __name__ == "__main__":
             print("POSTED TO TWITTER SUCCESSFULLY!")
         
             # POSTING ON INSTAGRAM
-            # try:
             quote = quote_to_list(quote)
             print(quote)
             createImage()
@@ -161,8 +160,6 @@ if __name__ == "__main__":
                 # Deleting the files generated to save space
                 elif f.endswith(".png") or f.endswith(".REMOVE_ME"):
                     os.remove(f)
-            # except:
-            #     print("There was some error in the Instagram process")
             time.sleep(SLEEP_DURATION)
         else:
             continue
