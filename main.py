@@ -134,8 +134,11 @@ if __name__ == "__main__":
     while True:
         # GETTING QUOTE
         quoteandauthor = getquote()
-        quote = quoteandauthor[0]
-        author = quoteandauthor[1]
+        try:
+            quote = quoteandauthor[0]
+            author = quoteandauthor[1]
+        except:
+            continue
         if quote != "0":
             # VALIDATING QUOTE
             if author == "" or len(quote)>200:
